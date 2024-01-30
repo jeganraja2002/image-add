@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lilita One", sans-serif;
+  user-select: none;
+}
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-add {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border: 3px solid lightblue;
+}
+
+.img-add::after {
+  position: absolute;
+  content: "add - image";
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.img-add img {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.button label {
+  border: 3px solid lightblue;
+  padding: 7px 30px;
+  color: lightblue;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button label:hover {
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
